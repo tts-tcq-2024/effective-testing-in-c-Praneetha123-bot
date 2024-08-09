@@ -2,6 +2,10 @@
 #include <assert.h>
 #include <string.h>
 
+// Buffer to capture the output
+#define BUFFER_SIZE 4096
+char capturedOutput[BUFFER_SIZE];
+
 int printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
