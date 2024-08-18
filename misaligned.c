@@ -17,6 +17,7 @@ int printColorMap() {
     }
     return i * j;
 }
+
 int main() {
     char buffer[1000] = {0};
     int result = printColorMap();
