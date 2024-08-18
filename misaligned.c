@@ -19,7 +19,7 @@ int printColorMap() {
 }
 int main() {
     char buffer[1000] = {0};
-    int result = printColorMap(buffer);
+    int result = printColorMap();
     
     const char* expectedMajorColors[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* expectedMinorColors[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
@@ -35,7 +35,7 @@ int main() {
             position++;
         }
     }
-    assert(result == position);
+    assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;
 }
